@@ -1,0 +1,97 @@
+* {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  color: whitesmoke;
+  transition: color 0.5s ease-in-out;
+  line-height: 1em;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.flex-item {
+  display: block;
+}
+
+.clock-title {
+  font-size: 8em;
+}
+
+.clicked {
+  color: #7f8c8d;
+}
+
+.form {
+  margin-bottom: 1em;
+}
+
+.input {
+  font-size: 3em;
+  border: none;
+  background: transparent;
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+input::placeholder {
+  text-align: center;
+  color: white;
+}
+
+.name-form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.greetings {
+  font-size: 3em;
+  border: none;
+  text-align: center;
+  color: white;
+}
+
+.to-do-list {
+  list-style-type: none;
+}
+
+li {
+  font-size: 1em;
+}
+
+.weather {
+  font-size: 3em;
+  color: white;
+  margin-top: 1em;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
